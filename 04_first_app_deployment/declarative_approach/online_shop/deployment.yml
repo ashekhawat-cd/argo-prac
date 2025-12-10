@@ -11,7 +11,7 @@ spec:
     metadata:
       name: apache-declarative-deployment-pod   #name of pod
       labels:
-        app: apache
+        app: declarative-apache
 
     spec:
       containers:
