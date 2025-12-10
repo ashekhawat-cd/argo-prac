@@ -1,7 +1,7 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: apache-deployment
+  name: apache-declarative-deployment
 spec:
   replicas: 3              # total no. of pod to be created
   selector:                   # tell pod name whose relplica should be 2
@@ -9,7 +9,7 @@ spec:
       app: declarative-apache
   template: 
     metadata:
-      name: apache-deployment-pod   #name of pod
+      name: apache-declarative-deployment-pod   #name of pod
       labels:
         app: apache
 
